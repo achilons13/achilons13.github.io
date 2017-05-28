@@ -7,6 +7,24 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<!-- CODIGO DEL SLIDER -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<!-- fin de codigo slider -->
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -87,6 +105,16 @@ font-family: 'Indie Flower', cursive;
   </div>
 </div>
 
+<!-- SLIDER    -->
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img_alicia1.jpg" style="width:100%">
+  <img class="mySlides" src="img_alicia2.jpg" style="width:100%">
+  <img class="mySlides" src="img_alicia3.jpg" style="width:100%">
+  <img class="mySlides" src="img_alicia4.jpg" style="width:100%">
+</div>
+<!-- FIN DE SLIDER -->
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ACERCA DE MI</h3>
