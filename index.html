@@ -28,18 +28,18 @@
 	}
 </script>
 <script>
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace("w3-black", "w3-red");
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace("w3-red", "w3-black");
-    }
-}
+	function myFunction(id) {
+		var x = document.getElementById(id);
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+			x.previousElementSibling.className = x.previousElementSibling.className
+					.replace("w3-black", "w3-red");
+		} else {
+			x.className = x.className.replace(" w3-show", "");
+			x.previousElementSibling.className = x.previousElementSibling.className
+					.replace("w3-red", "w3-black");
+		}
+	}
 </script>
 <style>
 body, h1, h2, h3, h4, h5, h6 {
@@ -171,7 +171,7 @@ body, html {
 		</script>
 		<!-- FIN DE SLIDER -->
 		<!-- IZQUIERAD y DERECHA -->
-		
+
 		<div class="w3-row w3-border">
 			<div class="w3-twothird w3-container w3-red">
 				<h2>w3-twothird</h2>
@@ -179,27 +179,14 @@ body, html {
 				<p>On screens smaller than 601 pixels it resizes to full screen.</p>
 			</div>
 			<div class="w3-third w3-container">
-				<h2>w3-third</h2>
-				<p>The w3-twothird class uses 33% of parent container.</p>
-				<p>On screens smaller than 601 pixels it resizes to full screen.</p>
-				<h2>Active Accordions</h2>
-				<p>In this example we add the w3-red class to an active
-					accordion (when the button is clicked on and the content is
-					opened).</p>
-
-				<button onclick="myFunction('Demo1')"
-					class="w3-button w3-block w3-black w3-left-align">Open
-					Section 1</button>
-				<div id="Demo1" class="w3-hide w3-container">
-					<p>Some text..</p>
-				</div>
-
-				<button onclick="myFunction('Demo2')"
-					class="w3-button w3-block w3-black w3-left-align">Open
-					Section 2</button>
-				<div id="Demo2" class="w3-hide w3-container">
-					<p>Some other text..</p>
-				</div>
+				<h2>COMIDA FAVORITA</h2>				
+				<ul class="w3-ul">
+					<li class="w3-hover-red">CEVICHE</li>
+					<li class="w3-hover-green">CALDO DE PATA</li>
+					<li class="w3-hover-blue">ARROZ CHAUFA</li>
+					<li class="w3-hover-black">PARIHUELA</li>
+					<li class="w3-hover-orange">AJI DE GALLINA</li>
+				</ul>
 
 
 			</div>
