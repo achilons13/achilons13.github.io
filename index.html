@@ -14,19 +14,19 @@
 
 <!-- fin de codigo slider -->
 <script>
-					function myFunction(id) {
-						var x = document.getElementById(id);
-						if (x.className.indexOf("w3-show") == -1) {
-							x.className += " w3-show";
-							x.previousElementSibling.className = x.previousElementSibling.className
-									.replace("w3-black", "w3-red");
-						} else {
-							x.className = x.className.replace(" w3-show", "");
-							x.previousElementSibling.className = x.previousElementSibling.className
-									.replace("w3-red", "w3-black");
-						}
-					}
-				</script>
+	function myFunction(id) {
+		var x = document.getElementById(id);
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+			x.previousElementSibling.className = x.previousElementSibling.className
+					.replace("w3-black", "w3-red");
+		} else {
+			x.className = x.className.replace(" w3-show", "");
+			x.previousElementSibling.className = x.previousElementSibling.className
+					.replace("w3-red", "w3-black");
+		}
+	}
+</script>
 <style>
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", sans-serif;
@@ -127,36 +127,38 @@ body, html {
 	</div>
 	</div>
 
-	<!-- SLIDER    -->
-	<h2 class="w3-center">MIS FOTOS</h2>
 
-	<div class="w3-content w3-section" style="max-width: 950px">
-		<img class="mySlides" src="img/img_alicia1.jpg" style="width: 100%">
-		<img class="mySlides" src="img/img_alicia2.jpg" style="width: 100%">
-		<img class="mySlides" src="img/img_alicia3.jpg" style="width: 100%">
-	</div>
-
-	<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			myIndex++;
-			if (myIndex > x.length) {
-				myIndex = 1
-			}
-			x[myIndex - 1].style.display = "block";
-			setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-	</script>
-	<!-- FIN DE SLIDER -->
 	<!-- Container (About Section) -->
 	<div class="w3-content w3-container w3-padding-64" id="about">
+		<!-- SLIDER    -->
+		<h2 class="w3-center">MIS FOTOS</h2>
+
+		<div class="w3-content w3-section" style="max-width: 950px">
+			<img class="mySlides" src="img/img_alicia1.jpg" style="width: 100%">
+			<img class="mySlides" src="img/img_alicia2.jpg" style="width: 100%">
+			<img class="mySlides" src="img/img_alicia3.jpg" style="width: 100%">
+		</div>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) {
+					myIndex = 1
+				}
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+		<!-- FIN DE SLIDER -->
+
 		<h3 class="w3-center">ACERCA DE MI</h3>
 		<p class="w3-center">
 			<em>AMO EL DISEÑO WEB</em>
@@ -210,13 +212,8 @@ body, html {
 				<div id="Demo2" class="w3-hide w3-container">
 					<p>Some other text..</p>
 				</div>
-				
-
-
 
 				<!-- FIN DE ACORDION -->
-
-
 
 			</div>
 		</div>
