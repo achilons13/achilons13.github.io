@@ -8,6 +8,35 @@
 	href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+	/*CODIGO DE SLIDER DE FOTOS*/
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {
+			slideIndex = 1
+		}
+		if (n < 1) {
+			slideIndex = x.length
+		}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		x[slideIndex - 1].style.display = "block";
+	}
+	/*FIN DE CODIGO DE SLIDER*/
+</script>
+
+
 <style>
 body {
 	font-family: "Lato", sans-serif
@@ -26,13 +55,13 @@ body {
 				class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
 				href="javascript:void(0)" onclick="myFunction()"
 				title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a
-				href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a> <a
+				href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a> <a
 				href="#band"
-				class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+				class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOTOS</a>
 			<a href="#tour"
 				class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
 			<a href="#contact"
-				class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+				class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
 			<div class="w3-dropdown-hover w3-hide-small">
 				<button class="w3-padding-large w3-button" title="More">
 					MORE <i class="fa fa-caret-down"></i>
@@ -43,6 +72,8 @@ body {
 						class="w3-bar-item w3-button">Media</a>
 				</div>
 			</div>
+			<a href="https://achilons13.github.io/actividades.html"
+				class="w3-bar-item w3-button w3-padding-large w3-hide-small">Actividades</a>
 			<a href="javascript:void(0)"
 				class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
 				class="fa fa-search"></i></a>
@@ -56,6 +87,8 @@ body {
 		<a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
 		<a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
 		<a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+		<a href="https://achilons13.github.io/actividades.html"
+				class="w3-bar-item w3-button w3-padding-large">Actividades</a>
 		<a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
 	</div>
 
@@ -104,6 +137,7 @@ body {
 				<button class="w3-button w3-black w3-display-right"
 					onclick="plusDivs(1)">&#10095;</button>
 			</div>
+
 			<!-- 
     <p class="w3-opacity"><i>We love music</i></p>
     <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
