@@ -17,7 +17,25 @@
 	
 </script>
 
+
 <style>
+
+.parallax {
+    /* The image used */
+    background-image: url("img/img_parallax1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
 	margin-bottom: 0;
@@ -56,6 +74,7 @@ footer {
 </style>
 </head>
 <body>
+<div class="parallax"></div>
 
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
