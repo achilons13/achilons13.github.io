@@ -21,7 +21,6 @@
 <link rel="stylesheet" href="https://achilons13.github.io/css/style.css">
 <script src="https://achilons13.github.io/js/script.js"></script>
 <style>
-
 </style>
 
 
@@ -80,17 +79,37 @@
 				</div>
 			</div>
 			<div class="col-sm-8 text-left">
+				<script>
+					var myIndex = 0;
+					carousel();
 
+					function carousel() {
+						var i;
+						var x = document.getElementsByClassName("mySlides");
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+						}
+						myIndex++;
+						if (myIndex > x.length) {
+							myIndex = 1
+						}
+						x[myIndex - 1].style.display = "block";
+						setTimeout(carousel, 2500);
+					}
+				</script>
 				<div class="w3-container w3-padding-32 w3-theme-d1">
 					<h1>ACTIVIDADES</h1>
+					<div class="w3-content w3-section" style="max-width: 500px">
+						<img class="mySlides w3-animate-top" src="img_rr_01.jpg"
+							style="width: 100%"> <img
+							class="mySlides w3-animate-bottom" src="img_rr_02.jpg"
+							style="width: 100%"> <img class="mySlides w3-animate-top"
+							src="img_rr_03.jpg" style="width: 100%"> <img
+							class="mySlides w3-animate-bottom" src="img_rr_04.jpg"
+							style="width: 100%">
+					</div>
 
-					
 				</div>
-
-
-				<hr>
-				<h3></h3>
-				<p></p>
 
 			</div>
 			<div class="col-sm-2 sidenav">
