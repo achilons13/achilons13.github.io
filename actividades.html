@@ -29,6 +29,9 @@
 .mySlides {
 	display: none;
 }
+.mySlides2 {
+	display: none;
+}
 </style>
 <body onLoad="carousel();">
 
@@ -123,11 +126,11 @@
 			</div>
 			<script>
 				var myIndex = 0;
-				carousel();
+				carousel2();
 
-				function carousel() {
+				function carousel2() {
 					var i;
-					var x = document.getElementsByClassName("mySlides");
+					var x = document.getElementsByClassName("mySlides2");
 					for (i = 0; i < x.length; i++) {
 						x[i].style.display = "none";
 					}
@@ -142,9 +145,9 @@
 			<div class="col-sm-2 sidenav">
 				<div class="well">
 					<div class="w3-content w3-section" style="max-width: 500px">
-						<img class="mySlides" src="img/cja1.jpg" style="width: 100%">
-						<img class="mySlides" src="img/cja1.jpg" style="width: 100%">
-						<img class="mySlides" src="img/cja1.jpg" style="width: 100%">
+						<img class="mySlides2" src="img/cja1.jpg" style="width: 100%">
+						<img class="mySlides2" src="img/cja2.jpg" style="width: 100%">
+						<img class="mySlides2" src="img/cja3.jpg" style="width: 100%">
 					</div>
 				</div>
 
