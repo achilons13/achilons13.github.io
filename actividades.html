@@ -29,11 +29,8 @@
 .mySlides {
 	display: none;
 }
-.mySlides2 {
-	display: none;
-}
 </style>
-<body onLoad="carousel();carousel2();">
+<body onLoad="carousel();">
 
 	<div class="navbar2">
 		<div class="social-bar">
@@ -124,31 +121,10 @@
 				</div>
 
 			</div>
-			<script>
-				var myIndex = 0;
-				carousel2();
-
-				function carousel2() {
-					var i;
-					var x = document.getElementsByClassName("mySlides2");
-					for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";
-					}
-					myIndex++;
-					if (myIndex > x.length) {
-						myIndex = 1
-					}
-					x[myIndex - 1].style.display = "block";
-					setTimeout(carousel, 2000); // Change image every 2 seconds
-				}
-			</script>
+			
 			<div class="col-sm-2 sidenav">
 				<div class="well">
-					<div class="w3-content w3-section" style="max-width: 500px">
-						<img class="mySlides2" src="img/cja1.jpg" style="width: 100%">
-						<img class="mySlides2" src="img/cja2.jpg" style="width: 100%">
-						<img class="mySlides2" src="img/cja3.jpg" style="width: 100%">
-					</div>
+					<img src="cja1.jpg" class="w3-round-xlarge" alt="Norway" style="width:30%">
 				</div>
 
 			</div>
