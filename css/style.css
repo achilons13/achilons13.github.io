@@ -1,5 +1,8 @@
 @CHARSET "ISO-8859-1";
-.mySlidesx {display:none}
+.mySlidesx {
+	display:none;
+	
+}
 
 /* Slideshow container */
 .slideshow-container {
