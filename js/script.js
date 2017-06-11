@@ -40,7 +40,7 @@
 		
 		
 		/*ACTIVAR SLIDER DE ACTIVIDADES*/
-		
+		 
 		  $(function() {
 		    $(".rslides").responsiveSlides();
 		  });
