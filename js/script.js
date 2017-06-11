@@ -40,9 +40,9 @@
 		
 		
 		/*ACTIVAR SLIDER DE ACTIVIDADES*/
-		<script>
+		
 		  $(function() {
 		    $(".rslides").responsiveSlides();
 		  });
-		</script>
+		
 		/*FIN DE SLIDER*/
