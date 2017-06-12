@@ -2,11 +2,11 @@
 body {
 	font-family: "Lato", sans-serif
 }
-
+/*FUNCIONAMIENTO DE SLIDER*/
 .mySlides {
 	display: none
 }
-
+/*FIN DE SLIDER PARALLEX*/
 .fa {
 	padding: 20px;
 	font-size: 30px;
