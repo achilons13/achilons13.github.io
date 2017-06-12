@@ -2,10 +2,10 @@
 /*INICIO HACER ZOOM*/
 
 .zoom{
-		transition: 0.2s ease;
- 		-moz-transition: 0.2s ease; /* Firefox */
- 		-webkit-transition: 0.2s ease; /* Chrome - Safari */
- 		-o-transition: 0.2s ease; /* Opera */
+		transition: 0.3s ease;
+ 		-moz-transition: 0.3s ease; /* Firefox */
+ 		-webkit-transition: 0.3s ease; /* Chrome - Safari */
+ 		-o-transition: 0.3s ease; /* Opera */
 	}
 	.zoom:hover{
 		transform : scale(2.2);
