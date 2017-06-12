@@ -1,4 +1,22 @@
 @CHARSET "ISO-8859-1";
+/*INICIO HACER ZOOM*/
+
+.zoom{
+		transition: 0.2s ease;
+ 		-moz-transition: 0.2s ease; /* Firefox */
+ 		-webkit-transition: 0.2s ease; /* Chrome - Safari */
+ 		-o-transition: 0.2s ease; /* Opera */
+	}
+	.zoom:hover{
+		transform : scale(2.2);
+		-moz-transform : scale(2.2); /* Firefox */
+		-webkit-transform : scale(2.2); /* Chrome - Safari */
+		-o-transform : scale(2.2); /* Opera */
+		-ms-transform : scale(2.2); /* IE9 */
+	}
+	
+/*FIN HACER ZOOM*/
+
 body {
 	font-family: "Lato", sans-serif
 }
