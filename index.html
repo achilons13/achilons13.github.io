@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <link rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
 <link rel="stylesheet"	href="css/style.css">
 
 
@@ -298,6 +300,20 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 			}
 		}
 	</script>
+	<script>
+    const backgroundVideo = new BackgroundVideo('.bv-video', {
+      src: [
+        'video/sample.mp4',
+        'video/sample.webm'
+      ],
+      onReady: function () {
+        // Use onReady() to prevent flickers or force loading state
+        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+        vidParent.classList.add('bv-video-wrap--ready');
+      }
+    });
+  </script>
+  <script src="js/backgroundVideo.js"></script>
 	
 </body>
 </html>
