@@ -1,8 +1,6 @@
 /**
  * 
  */
-
-
 // Automatic Slideshow - change image every 4 seconds
 		var myIndex = 0;
 		carousel();
@@ -38,7 +36,6 @@
 				modal.style.display = "none";
 			}
 		}
-		
 		
 		
 		/*ACTIVAR SLIDER DE ACTIVIDADES*/
