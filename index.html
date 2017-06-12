@@ -305,16 +305,10 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 	</script>
 	<!--INICIO VIDEO DE FONDO -->
 	<script>
-jQuery(document).ready(function() {
-        jQuery('#my-video').backgroundVideo({
-            $videoWrap: $('#cmn-video-demo3__container'),
-            $outerWrap: $('.block-block block-block-10')    
-        });
-    });
-    const backgroundVideo = new BackgroundVideo('.bv-video', {
+ const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
-        'video/sample.mp4',
-        'video/sample.webm'
+        '../videos/sample.mp4',
+        '../videos/sample.webm'
       ],
       onReady: function () {
         // Use onReady() to prevent flickers or force loading state
@@ -322,6 +316,7 @@ jQuery(document).ready(function() {
         vidParent.classList.add('bv-video-wrap--ready');
       }
     });
+  
   </script>
 <!-- FIN SCRIPT-->
   <script src="js/backgroundVideo.js"></script>
