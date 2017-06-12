@@ -8,8 +8,6 @@
 <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <link rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link href="css/normalize.css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
 <link rel="stylesheet"	href="css/style.css">
 
 
@@ -139,7 +137,7 @@
 
 		<!-- The Tour Section -->
 		<div class="w3-black" id="tour">
-		<video class="bv-video"></video>
+		
 			<div class="w3-container w3-content w3-padding-64"
 				style="max-width: 800px">
 				
@@ -303,23 +301,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 			}
 		}
 	</script>
-	<!--INICIO VIDEO DE FONDO -->
-	<script>
- const BackgroundVideo = new BackgroundVideo(".bv-video",{
-      src: [
-        '../videos/sample.mp4',
-        '../videos/sample.webm'
-      ],
-      onReady: function () {
-        // Use onReady() to prevent flickers or force loading state
-        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
-        vidParent.classList.add('bv-video-wrap--ready');
-      }
-    });
-  
-  </script>
-<!-- FIN SCRIPT-->
-  <script src="js/backgroundVideo.js"></script>
+
 	
 </body>
 </html>
