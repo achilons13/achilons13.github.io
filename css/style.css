@@ -119,7 +119,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.parallaxfooter {
+.parallaxfooter{
 	/* The image used */
 	background-image: url("../img/cajamarca.jpg");
 	/* Set a specific height */
