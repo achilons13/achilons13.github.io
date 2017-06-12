@@ -6,6 +6,10 @@
 	font-size: 48px;
   	text-shadow: 4px 4px 4px #aaa;
 }
+.fuentetexto{
+	font-family: 'Lobster', cursive;
+	font-size: 14px;
+}
 /*FIN DEL CODIGO DE LA FUENTE*/
 /*BARRA SOCIAL LATERAL INICIO*/
 .social {
