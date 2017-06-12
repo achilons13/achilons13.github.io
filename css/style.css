@@ -1,8 +1,4 @@
 @CHARSET "ISO-8859-1";
-.mySlides {
-	display: none;
-}
-
 body {
 	font-family: "Lato", sans-serif
 }
@@ -149,4 +145,4 @@ footer {
   float: left;
   width: 100%;
   border: 0;
-  }/*FIN DE SLIDER DE ACTIVIADDES*/
+  }/**/

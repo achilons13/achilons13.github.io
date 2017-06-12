@@ -13,7 +13,47 @@
 <link rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://achilons13.github.io/css/style.css">
 <link rel="stylesheet" href="css/responsiveslides.css">
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
 
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
 </head>
 
 <body>
@@ -71,7 +111,7 @@
 				<div class="w3-container w3-padding-32 w3-theme-d1">
 					<h1>ACTIVIDADES</h1>
 
-					<div class="w3-content w3-section" style="max-width: 1200px">
+					<div class="w3-content w3-section" style="max-width: 900px">
 						 <!-- Slideshow 1 -->
 							    <ul class="rslides" id="slider1">
 							      <li><img src="img/agricolascaja.JPG" alt=""></li>

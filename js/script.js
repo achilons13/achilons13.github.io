@@ -1,39 +1,47 @@
-  // You can also use "$(window).load(function() {"
-    $(function () {
+/**
+ * 
+ */
+// Automatic Slideshow - change image every 4 seconds
+		var myIndex = 0;
+		carousel();
 
-      // Slideshow 1
-      $("#slider1").responsiveSlides({
-        maxwidth: 800,
-        speed: 800
-      });
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 4000);
+		}
 
-      // Slideshow 2
-      $("#slider2").responsiveSlides({
-        auto: false,
-        pager: true,
-        speed: 300,
-        maxwidth: 540
-      });
+		// Used to toggle the menu on small screens when clicking on the menu button
+		function myFunction() {
+			var x = document.getElementById("navDemo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
 
-      // Slideshow 3
-      $("#slider3").responsiveSlides({
-        manualControls: '#slider3-pager',
-        maxwidth: 540
-      });
-
-      // Slideshow 4
-      $("#slider4").responsiveSlides({
-        auto: false,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
-
-    });
+		// When the user clicks anywhere outside of the modal, close it
+		var modal = document.getElementById('ticketModal');
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		
+		
+		
+		/*ACTIVAR SLIDER DE ACTIVIDADES*/
+		<script>
+		  $(function() {
+		    $(".rslides").responsiveSlides();
+		  });
+		</script>
