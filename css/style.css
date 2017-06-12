@@ -119,6 +119,17 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.parallaxfooter {
+	/* The image used */
+	background-image: url("../img/cajamarca.jpg");
+	/* Set a specific height */
+	min-height: 250px;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .parallaxfondo {
 	/* The image used */
