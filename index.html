@@ -305,6 +305,12 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 	</script>
 	<!--INICIO VIDEO DE FONDO -->
 	<script>
+jQuery(document).ready(function() {
+        jQuery('#my-video').backgroundVideo({
+            $videoWrap: $('#cmn-video-demo3__container'),
+            $outerWrap: $('.block-block block-block-10')    
+        });
+    });
     const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
         'video/sample.mp4',
