@@ -4,32 +4,59 @@
 <title>ACTIVIDADES</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Pacifico"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Tangerine">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link rel="stylesheet"	href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://achilons13.github.io/css/style.css">
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
 
-<style>
-</style>
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
 
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
 </head>
-<style>
-.mySlides {
-	display: none;
-}
-</style>
-<body onLoad="carousel();">
+
+<body>
 
 	<div class="navbar2">
 		<div class="social-bar">
@@ -39,9 +66,6 @@
 				class="fa fa-youtube"></a> <a href="#" class="fa fa-instagram"></a>
 		</div>
 	</div>
-
-
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -68,7 +92,6 @@
 		</div>
 	</nav>
 
-
 	<div class="container-fluid text-center">
 		<div class="row content">
 			<div class="col-sm-2 sidenav">
@@ -81,46 +104,20 @@
 						class="w3-bar-item w3-button">CUTERVO</a> <a
 						href="https://achilons13.github.io/provincias/cajabamba.html"
 						class="w3-bar-item w3-button">CAJABAMBA</a>
-
 				</div>
 			</div>
 
-			<div class="col-sm-8 text-left">
-
-				<script>
-					var myIndex = 0;
-					carousel();
-
-					function carousel() {
-						var i;
-						var x = document.getElementsByClassName("mySlides");
-						for (i = 0; i < x.length; i++) {
-							x[i].style.display = "none";
-						}
-						myIndex++;
-						if (myIndex > x.length) {
-							myIndex = 1
-						}
-						x[myIndex - 1].style.display = "block";
-						setTimeout(carousel, 2500);
-					}
-				</script>
+			<div class="col-sm-8 text-left">				
 				<div class="w3-container w3-padding-32 w3-theme-d1">
 					<h1>ACTIVIDADES</h1>
 
 					<div class="w3-content w3-section" style="max-width: 900px">
-						<ul class="rslides rslides1" id="slider1"
-							style="max-width: 800px;">
-							<li id="rslides1_s0" class="rslides1_on"
-								style="float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 800ms ease-in-out;"><img
-								src="img/agricolascaja.JPG" alt=""></li>
-							<li id="rslides1_s1" class=""
-								style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 800ms ease-in-out;"><img
-								src="img/industrialescaja.jpg" alt=""></li>
-							<li id="rslides1_s2" class=""
-								style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 800ms ease-in-out;"><img
-								src="img/agricultores.jpg" alt=""></li>
-						</ul>
+						 <!-- Slideshow 1 -->
+							    <ul class="rslides" id="slider1">
+							      <li><img src="img/agricolascaja.JPG" alt=""></li>
+							      <li><img src="img/industrialescaja.jpg" alt=""></li>
+							      <li><img src="img/agricultores.jpg" alt=""></li>
+							    </ul>						
 					</div>
 
 				</div>
