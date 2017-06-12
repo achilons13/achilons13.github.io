@@ -1,5 +1,12 @@
 @CHARSET "ISO-8859-1";
-
+/*CODIGO DE LA FUENTE*/
+.fuentecontacto{
+	font-family: 'Eczar', serif;
+	color: white;
+	font-size: 48px;
+  	text-shadow: 4px 4px 4px #aaa;
+}
+/*FIN DEL CODIGO DE LA FUENTE*/
 /*BARRA SOCIAL LATERAL INICIO*/
 .social {
 	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
